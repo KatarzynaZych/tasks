@@ -4,6 +4,7 @@ import com.crud.tasks.domain.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.Null;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,7 +18,15 @@ public class DbService {
         return repository.findAll();
     }
 
-    public Task getTaskById(final String taskId){
-        return repository.findById(taskId);
+    public Task saveTask(final Task task){
+        return repository.save(task);
+    }
+
+    public Optional<Task> getTask(final Long id){
+        return repository.findById(id);
+    }
+
+    public void deleteTask(final Long id){
+        repository.deleteById(id);
     }
 }
