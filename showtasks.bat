@@ -3,9 +3,13 @@ echo.
 echo Cannot openChrome
 goto fail
 
+
+
 :fail
 echo.
 echo There were errors
+
+
 
 :end
 echo.
