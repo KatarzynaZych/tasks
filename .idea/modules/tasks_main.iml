@@ -4,13 +4,6 @@
     <facet type="Spring" name="Spring">
       <configuration />
     </facet>
-    <facet type="web" name="Web Gradle : tasks-0.0.1-SNAPSHOT.war">
-      <configuration>
-        <webroots>
-          <root url="file://C:\Users\Kasia\Desktop\tasks\src\main\webapp" relative="/" />
-        </webroots>
-      </configuration>
-    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../out/production/classes" />
@@ -23,7 +16,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-web:2.0.0.M7" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-jpa:2.0.0.M7" level="project" />
-    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.44" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:8.0.9-rc" level="project" />
     <orderEntry type="library" name="Gradle: org.projectlombok:lombok:1.16.18" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.0.0.M7" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-aop:2.0.0.M7" level="project" />
