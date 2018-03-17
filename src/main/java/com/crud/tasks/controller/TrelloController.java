@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/v1/trello")
@@ -18,8 +19,31 @@ public class TrelloController {
     @RequestMapping(method = RequestMethod.GET, value = "getTrelloBoards")
     public void getTrelloBoards() {
 
+//       List<TrelloBoardDto> trelloBoards = trelloClient.getTrelloBoards();
+//
+//       List<TrelloBoardDto> trelloBoardDtoList = trelloBoards.stream()
+//                .filter(t -> !t.getName().isEmpty())
+//                .filter(t -> !t.getId().isEmpty())
+//                .filter(t -> t.getName().contains("Kodilla"))
+//                .collect(Collectors.toList());
+//
+//        trelloBoardDtoList.forEach(trelloBoardDto->System.out.println("id: "
+//                + trelloBoardDto.getId() + "  name: " + trelloBoardDto.getName()));
+
+
+        // GET request
         List<TrelloBoardDto> trelloBoards = trelloClient.getTrelloBoards();
-        trelloBoards.forEach(trelloBoardDto -> System.out.println(trelloBoardDto.getId() + " " + trelloBoardDto.getName()));
+
+        trelloBoards.forEach(trelloBoardDto -> {
+
+            System.out.println(trelloBoardDto.getName() + " - " + trelloBoardDto.getId());
+
+            System.out.println("This board contains lists: ");
+
+            trelloBoardDto.getLists().forEach(trelloList ->
+                    System.out.println(trelloList.getName() + " - " + trelloList.getId() + " - " + trelloList.isClosed()));
+
+        });
 
     }
 }
