@@ -16,7 +16,7 @@ public class CreatedTrelloCard {
     private  String name;
     @JsonProperty("shortUrl")
     private String shortUrl;
-    @JsonProperty("badges")
-    private Badges badges;
+//    @JsonProperty("badges") komentarz aby test shouldCreateCard() dzialał
+//    private Badges badges;
 
 }
