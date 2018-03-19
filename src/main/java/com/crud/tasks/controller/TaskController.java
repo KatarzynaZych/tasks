@@ -30,8 +30,8 @@ public class TaskController {
     }
 
     @RequestMapping(method = RequestMethod.DELETE,value = "deleteTask")
-    public void delete(@RequestParam Long id){
-        service.deleteTask(id);
+    public void delete(@RequestParam Long taskId){
+        service.deleteTask(taskId);
         //System.out.println("The task has been deleted");
     }
 

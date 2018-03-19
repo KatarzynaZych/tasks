@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a644a4d-051d-4ec2-a2da-54dd410f4cf1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/tasks_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/tasks_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/tasks_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/tasks_test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/crud/tasks/controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/crud/tasks/controller/TaskController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -156,8 +155,8 @@
       <file leaf-file-name="TaskController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/crud/tasks/controller/TaskController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+            <state relative-caret-position="176">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1075,7 +1074,7 @@
       <workItem from="1520361719207" duration="10703000" />
       <workItem from="1521227099963" duration="18916000" />
       <workItem from="1521389962367" duration="12604000" />
-      <workItem from="1521471918284" duration="19091000" />
+      <workItem from="1521471918284" duration="19291000" />
     </task>
     <servers />
   </component>
@@ -1112,7 +1111,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174164000" />
+    <option name="totallyTimeSpent" value="174364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1556,8 +1555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/crud/tasks/controller/TaskController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+        <state relative-caret-position="176">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
