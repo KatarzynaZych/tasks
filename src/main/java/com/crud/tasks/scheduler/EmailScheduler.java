@@ -18,10 +18,18 @@ public class EmailScheduler {
     private AdminConfig adminConfig;
 
     private static final String SUBJECT = "Task: Once a day email";
-   // @Scheduled(cron = "0 0 10 * * *")
-    @Scheduled(fixedDelay = 10000)
+    @Scheduled(cron = "0 0 10 * * *")
+   // @Scheduled(fixedDelay = 10000) every 10 sec
     public void sendInformationEmail(){
+        String taskWord;
         long size = taskRepository.count();
-        simpleEmailService.send(new Mail(adminConfig.getAdminMail(),SUBJECT,"Currently in database you got: " + size + " tasts." ));
+
+        if(size == 1){
+            taskWord = " task.";
+        }else {
+            taskWord = " tasks.";
+        }
+
+        simpleEmailService.send(new Mail(adminConfig.getAdminMail(),SUBJECT,"Currently in database you got: " + size + taskWord ));
     }
 }
