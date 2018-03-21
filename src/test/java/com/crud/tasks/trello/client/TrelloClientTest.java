@@ -11,7 +11,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -25,7 +24,7 @@ import static org.mockito.Mockito.when;
 public class TrelloClientTest {
 
     @InjectMocks
-    private TrelloClient trelloClient;
+    private TrelloService trelloClient;
 
     @Mock
     private RestTemplate restTemplate;
